@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Hotels>
 	<Hotel Rating="4.2">
 		<Name>Westin</Name>
@@ -6,11 +6,11 @@
 		<Phone>800-937-8461</Phone>
 		<Address>
 			<Number>11</Number>
-			<Street>E 7th St</Street>
+			<Street>E.7th St</Street>
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
+			<NearstAirport>Sky Harbor</NearstAirport>
 		</Address>
 	</Hotel>
 	<Hotel Rating="4.0">
@@ -45,7 +45,7 @@
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
-			<NearestAirport>Phoenix-Mesa Gateway</NearestAirport>
+			<NearstAirport>Phoenix-Mesa Gateway</NearstAirport>
 		</Address>
 	</Hotel>
 	<Hotel>
@@ -69,8 +69,9 @@
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
-		</Address>
+			<NearstAirport>Sky Harbor</NearstAirport>
+		
+	</Address>
 	</Hotel>
 	<Hotel>
 		<Name>Aloft Tempe</Name>
@@ -92,7 +93,7 @@
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
-			<NearestAirport>Phoenix Sky Harbor</NearestAirport>
+			<NearstAirport>Phoenix Sky Harbor</NearstAirport>
 		</Address>
 	</Hotel>
 	<Hotel>
@@ -103,6 +104,7 @@
 			<Street>W Baseline Rd</Street>
 			<City>Tempe</City>
 			<State>AZ</State>
+			<NearstAirport>Sky Harbor</NearstAirport>
 			<Zip>85283</Zip>
 		</Address>
 	</Hotel>
