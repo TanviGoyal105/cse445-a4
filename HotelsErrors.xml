@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Hotel>
-	<!-- ❌ Error 1: Root element should be 'Hotels' -->
+	<!-- Root element should be 'Hotels' -->
 	<Hotel Rating="4.2">
 		<Name>Westin</Name>
 		<Phone>480-968-8885</Phone>
@@ -15,9 +15,8 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<!-- ❌ Error 2: Rating attribute is missing (should be required) -->
-		<Name>Hilton Garden Inn</Name>
+	<Hotel Rating="4.0">
+		<!-- Missing required attribute 'Name' -->
 		<Phone>602-222-2222</Phone>
 		<Address>
 			<Number>4000</Number>
@@ -27,10 +26,9 @@
 			<Zip>85012</Zip>
 		</Address>
 	</Hotel>
-
-	<Hotel Rating="4.0">
+	<Hotel>
+		<!-- Missing Phone element -->
 		<Name>Courtyard by Marriott</Name>
-		<!-- ❌ Error 3: Missing required Phone element entirely -->
 		<Address>
 			<Number>601</Number>
 			<Street>S Ash Ave</Street>
@@ -39,24 +37,58 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-
 	<Hotel Rating="3.9">
+		<!-- Missing closing tag for Address -->
 		<Name>Residence Inn</Name>
 		<Phone>480-123-4567</Phone>
 		<Address>
-			<!-- ❌ Error 4: No closing tag for Address -->
 			<Number>1825</Number>
 			<Street>E University Dr</Street>
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
-			<NearestAirport>Phoenix-Mesa Gateway</NearestAirport>
-		</Hotel>
+			<NearstAirport>Phoenix-Mesa Gateway</NearstAirport>
+	</Hotel>
+	<Hotel>
+		<!-- 2 Name attributes -->
+		<Name>Hyatt Place</Name>
+		<Name>Hyatt Place2</Name>
+		<Phone>480-789-4567</Phone>
+		<Address>
+			<Number>1413</Number>
+			<Street>W Rio Salado Pkwy</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.3">
+		<Name>Tempe Mission Palms</Name>
+		<Phone>800-547-8705</Phone>
+		<Phone>480-894-1400</Phone>
+		<Address>
+			<Number>60</Number>
+			<Street>E 5th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+			<NearstAirport>Sky Harbor</NearstAirport>
 
-	<Hotel Rating="3.5">
+		</Address>
+	</Hotel>
+	<Hotel>
+		<Name>Aloft Tempe</Name>
+		<Phone>480-553-9900</Phone>
+		<Address>
+			<Number>951</Number>
+			<Street>E Playa del Norte Dr</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="3.7">
 		<Name>MOXY Phoenix Tempe</Name>
-		<Name>Extra Hotel Name</Name>
-		<!-- ❌ Error 5: Duplicate Name element -->
 		<Phone>480-968-3451</Phone>
 		<Address>
 			<Number>1333</Number>
@@ -64,7 +96,29 @@
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
-			<NearestAirport>Phoenix Sky Harbor</NearestAirport>
+			<NearstAirport>Phoenix Sky Harbor</NearstAirport>
 		</Address>
 	</Hotel>
-</Hotel>
+	<Hotel>
+		<Name>Holiday Inn Express</Name>
+		<Phone>480-496-6000</Phone>
+		<Address>
+			<Number>1520</Number>
+			<Street>W Baseline Rd</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<NearstAirport>Sky Harbor</NearstAirport>
+			<Zip>85283</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.1">
+		<Name>DoubleTree by Hilton</Name>
+		<Phone>480-967-1441</Phone>
+		<Address>
+			<Number>2100</Number>
+			<Street>S Priest Dr</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85282</Zip>
+		</Address>
+	</Hotel>
