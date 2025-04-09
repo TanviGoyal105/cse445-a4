@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-	<xs:element name="Hotels">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="Hotel" maxOccurs="unbounded">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="Name" type="xs:string"/>
-							<xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
-							<xs:element name="Address">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="Number" type="xs:string"/>
-										<xs:element name="Street" type="xs:string"/>
-										<xs:element name="City" type="xs:string"/>
-										<xs:element name="State" type="xs:string"/>
-										<xs:element name="Zip" type="xs:string"/>
-										<xs:element name="NearstAirport" type="xs:string" minOccurs="0"/>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-						<xs:attribute name="Rating" type="xs:string" use="optional"/>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-</xs:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		   targetNamespace="http://venus.sod.asu.edu/WSRepository/xml/"
+		   elementFormDefault="qualified" attributeFormDefault="unqualified"
+>
+	<!-- Define hotels -->
+	<xsd:element name="Hotels">
+		<xsd:complexType>
+			<xsd:sequence>
+				<!-- Define hotel -->
+				<xsd:element name="Hotel" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<!-- Define name -->
+							<xsd:element name="Name" type="xsd:string"/>
+							<!-- Define phone -->
+							<xsd:element name="Phone" type="xsd:string" maxOccurs="unbounded"/>
+							<!-- Define address -->
+							<xsd:element name="Address">
+								<xsd:complexType>
+									<!-- Define address elements -->
+									<xsd:sequence>
+										<xsd:element name="Number" type="xsd:string"/>
+										<xsd:element name="Street" type="xsd:string"/>
+										<xsd:element name="City" type="xsd:string"/>
+										<xsd:element name="State" type="xsd:string"/>
+										<xsd:element name="Zip" type="xsd:string"/>
+										<!-- make nearst airport an optional string -->
+										<xsd:element name="NearstAirport" type="xsd:string" minOccurs="0"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+						<!-- make rating an optional string -->
+						<xsd:attribute name="Rating" type="xsd:string" use="optional"/>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+<!-- end schema -->
+</xsd:schema>
